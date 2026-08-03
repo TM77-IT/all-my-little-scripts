@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Script who check if ssh is up or down
+
+if systemctl is-active --quiet ssh; then
+	echo "SSH IS UP" 
+else 
+	echo "SSH IS DOWN"
+fi
