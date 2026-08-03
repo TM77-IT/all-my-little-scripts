@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Whoami script: displays information about the user and the computer.
+
+echo "================================="
+echo "Hello, let's check who you are:"
+echo "You are $USER."
+echo "The machine name is $(hostname)."
+echo "The IP address is $(hostname -I | awk '{print $1}')."
+echo "The current date and time are $(date '+%d/%m/%Y %H:%M')."
+echo "================================="
+
